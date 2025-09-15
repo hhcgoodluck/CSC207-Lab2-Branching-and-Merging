@@ -1,3 +1,4 @@
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -20,6 +21,6 @@ public class DataTypesTest {
         for (int i = 1; i <= 1_000_000; i++) {
             numbers[i-1] = i;
         }
-        assertEquals(x, DataTypes.sum(numbers), "sum from 1 to 1 million should be " + x);
+        Assertions.assertEquals(x, DataTypes.sum(numbers), "sum from 1 to 1 million should be " + x);
     }
 }
